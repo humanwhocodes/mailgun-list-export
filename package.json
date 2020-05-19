@@ -1,6 +1,6 @@
 {
   "name": "@humanwhocodes/mailgun-list-export",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI to export members from a Mailgun list",
   "bin": {
     "mailgun-list-export": "src/bin.js"
@@ -12,7 +12,7 @@
     "type": "github",
     "url": "https://github.com/sponsors/nzakas"
   },
-  "repository": "@humanwhocodes/mailgun-list-export",  
+  "repository": "@humanwhocodes/mailgun-list-export",
   "dependencies": {
     "@humanwhocodes/env": "^0.3.1",
     "cli-progress": "^3.8.2",
