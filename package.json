@@ -5,6 +5,9 @@
   "bin": {
     "mailgun-list-export": "src/bin.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@humanwhocodes/env": "^0.3.1",
     "debug": "^4.1.1",
