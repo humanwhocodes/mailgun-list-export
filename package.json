@@ -1,0 +1,26 @@
+{
+  "name": "@humanwhocodes/mailgun-list-export",
+  "version": "0.0.0",
+  "description": "CLI to export members from a Mailgun list",
+  "bin": {
+    "mailgun-list-export": "src/bin.js"
+  },
+  "dependencies": {
+    "@humanwhocodes/env": "^0.3.1",
+    "debug": "^4.1.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mailgun",
+    "api",
+    "json"
+  ],
+  "author": "Nicholas C. Zakas",
+  "license": "Apache-2.0"
+}
