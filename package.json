@@ -17,7 +17,7 @@
     "eslint": "^7.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint *.js src/"
   },
   "keywords": [
     "mailgun",
