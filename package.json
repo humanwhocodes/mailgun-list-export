@@ -1,6 +1,6 @@
 {
   "name": "@humanwhocodes/mailgun-list-export",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CLI to export members from a Mailgun list",
   "bin": {
     "mailgun-list-export": "src/bin.js"
