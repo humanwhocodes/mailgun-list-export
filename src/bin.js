@@ -13,6 +13,7 @@ const { Env } = require("@humanwhocodes/env");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const debug = require("debug")("main");
+const { SingleBar: ProgressBar } = require("cli-progress");
 
 //-----------------------------------------------------------------------------
 // Helpers
@@ -61,10 +62,18 @@ const MAILGUN_LIST_URL = `https://api.mailgun.net/v3/lists/${ process.argv[2] }`
 	const listMeta = await getURL(MAILGUN_LIST_URL);
 	const memberCount = listMeta.list.members_count;
 
+	// set up progress bar
+	const progress = new ProgressBar({
+		stopOnComplete: true,
+		clearOnComplete: true,
+	});
+	progress.start(memberCount, 0);
+
 	// Step 2: Fetch the members
 	do {
 		const memberData = await getURL(membersURL);
 		members.push(...memberData.items);
+		progress.increment(memberData.items.length);
 		membersURL = memberData.paging.next;
 	} while (members.length < memberCount);
 
