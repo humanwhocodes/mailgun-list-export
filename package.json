@@ -12,6 +12,7 @@
     "type": "github",
     "url": "https://github.com/sponsors/nzakas"
   },
+  "repository": "@humanwhocodes/mailgun-list-export",  
   "dependencies": {
     "@humanwhocodes/env": "^0.3.1",
     "cli-progress": "^3.8.2",
